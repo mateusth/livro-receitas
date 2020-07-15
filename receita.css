@@ -1,0 +1,22 @@
+/* Corpo da página */
+main {
+    background-color: rgb(175, 237, 245);
+    padding-top: 20px;
+    width: 850px;
+    margin: 10px auto;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+#quem {
+    font-family: cursive;
+    width: auto;
+    padding: 40px;
+}
+
+i {   font-style: italic  }
+
+c {
+    font-family: sans-serif;
+    font-weight: bold;
+}

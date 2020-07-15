@@ -1,0 +1,106 @@
+/* Corpo da página */
+main {
+    background-color: rgb(175, 237, 245);
+    padding-top: 20px;
+    width: 850px;
+    margin: 10px auto;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+#quem {
+    font-family: cursive;
+    width: auto;
+    padding: 40px;
+}
+
+i {   font-style: italic  }
+
+c {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* Caixa de formulários */
+fieldset  { 
+    padding: 15px;
+    margin: 20px auto;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 450px;
+}
+
+form label, legend {
+    display:block;
+    font-size: 17px;
+    margin: 5px 5px;   
+}
+
+legend {
+    color: rgb(72, 101, 163);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+form label ~ fieldset {  margin-top: 10px }
+
+.input-padrao {
+    display: block;
+    margin: 5px 0;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 85%;
+    background-color: rgba(255,255,255,.85);
+}
+
+input:hover, textarea:hover {
+    background-color: #dfdede;
+}
+
+fieldset fieldset  {   width: 85% }
+
+fieldset legend {   margin-bottom: -10px }
+
+select{   margin-top: 5px }
+
+.checkbox {   margin: 20px 0 }
+
+.enviar {
+    width: auto;
+    padding: 10px;
+    background: rgb(86, 204, 86);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer
+}
+
+.enviar:hover {
+    background: rgb(4, 105, 13);
+    transform: scale(1.1);
+}
+
+/* tabela*/
+table {
+    border: solid;
+    margin: auto;
+    margin-bottom: 30px;;
+    transition: 1s all;
+}
+
+table:hover {   transform: scale(1.2) }
+
+thead {
+     background: #555555;
+     color: white;
+     font-weight: bold;
+}
+
+td, th {
+    border: 1px solid;
+    border-spacing: 0px;
+    padding: 8px 15px
+}

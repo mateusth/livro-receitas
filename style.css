@@ -1,0 +1,188 @@
+/*Cabeçalho*/
+header{
+    background-color: rgb(40, 184, 11);
+    width: 100%;
+}
+
+div#header {
+    margin: 0px 150px;
+    width: auto;
+    height: 50px;
+}
+
+div#header h1{
+    margin-top: 5px;
+    display: inline-block
+}
+
+#lamp-dark {
+    float: left;
+    padding: 5px;
+}
+
+/* dark mode no HTML, CSS e JS */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode main {
+    background-color: grey;
+}
+
+/*Menu e submenu*/
+ul#menu {
+    margin-top: 13px;;
+    float: right;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: WHITE;
+}
+ul#menu li {
+    display: block;
+    float: left;
+    height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 140px;
+}
+
+#sub:hover {
+    border:solid;
+    border-radius: 4px;
+    border-color: rgb(145, 211, 241, .4);
+}
+
+ul#menu ul {
+    display: none;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 2px;
+    padding-bottom: -20px;
+}
+
+ul#menu li:hover ul {
+    display: block;
+}
+
+
+
+/*logo dos menus*/
+figura img {
+    position: absolute;
+    top: 10px;
+    right: 0vmax;
+    width: 60px;
+    height: 55px;
+    margin-right: 20px;
+}
+
+
+
+
+/* album para escolha das receitas */
+ul#album {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none
+}
+
+ul#album li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+    transition: all 0.5s ease-in;
+}
+
+ul#album li span {
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0,0,0,.4);
+    font-size:10pt;
+    line-height: 370px;
+    padding: 5px
+}
+
+ul#album li:hover {
+    transform: scale(1.5);
+}
+
+ul#album li:hover span {
+    opacity: 1;
+}
+
+ul#album li#foto1 {
+    background: url(imagens/receitas/macarronada0.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+ul#album li#foto1:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+ul#album li#foto2 {
+    background: url(imagens/receitas/pao0.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+ul#album li#foto2:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+ul#album li#foto3 {
+    background: url(banner/3.JPG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+ul#album li#foto3:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+ul#album li#foto4 {
+    background: url(banner/4.JPG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+ul#album li#foto4:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+
+/*Rodapé*/
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(40, 184, 11);
+    padding: 5px
+}
+
+footer p {
+    font-size: 14px;
+    margin: 1px;
+    text-align: center;
+}

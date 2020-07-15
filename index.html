@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width'>
+        <title>Livro de Receitas do Casal</title>
+        <link rel='icon' href='imagens/aba.png'>
+        <link rel='stylesheet' href='reset.css'>
+        <link rel='stylesheet' href='style.css'>
+        <script src='js.js'></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img id='lamp-dark' src="imagens/lamp-on.png" onclick="dark()"/>
+
+            <div id='header'>
+                <h1><img src='imagens/logo.png' alt="Logo do livro de receitas"></h1>                            
+                <ul id='menu'>
+                    <li onmouseover='fotoMenu("imagens/menu-home.png")' onmouseout='fotoMenu("imagens/menu-home.png")'><a href='index.html'>Home</a>
+                        <ul class='submenu'>
+                            <li id='sub'>Submenu 1</li>
+                            <li id='sub'>Submenu 2</li>
+                            <li id='sub'>Submenu 3</li>
+                        </ul>
+                    </li>
+                    <li onmouseover='fotoMenu("imagens/menu-receitas.png")' onmouseout='fotoMenu("imagens/menu-home.png")'><a href='sua_receita.html'>Sua Receita</a></li>
+                    <li onmouseover='fotoMenu("imagens/menu-contato.png")' onmouseout='fotoMenu("imagens/menu-home.png")'><a href='contato.html'>Contato</a>
+                        <ul class='submenu'>
+                            <li id='sub'>Quem Somos</li>
+                            <li id='sub'><a href='#formularios'>Formulários</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <figura>
+                <img id='figura' src = 'imagens/menu-home.png'/>
+            </figura>
+        </header>
+
+<!--ALGO AQUI-->        
+
+        <main>
+            <section>
+                ALGO AQUI
+            </section>
+
+
+
+<!--FOTOS PARA RECEITAS-->        
+            <section>
+                <div>
+                    <ul id='album'>
+                        <li id='foto1'><span><a href=receitas/macarronada.html>Macarronada Secreta</a></span></li>
+                        <li id='foto2'><span><a href=receitas/pao.html>Pão Delícia</a></span></li>
+                        <li id='foto3'><span>Aguarde</span></li>
+                        <li id='foto4'><span>Aguarde</span></li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+<!--RODAPÉ-->        
+
+        <footer>
+            <p class='copyright'>&copy;2020 Livro de Receitas do Casal.</p>
+            <p>As melhores receitas!</p>
+        </footer>
+    </body>
+</html>

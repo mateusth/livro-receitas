@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width'>
+        <title>Livro de Receitas do Casal</title>
+        <link rel='icon' href='imagens/aba.png'>
+        <link rel='stylesheet' href='reset.css'>
+        <link rel='stylesheet' href='style.css'>
+        <link rel='stylesheet' href='contato.css'>
+        <script src='js.js'></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img id='lamp-dark' src="imagens/lamp-on.png" onclick="dark()"/>
+
+            <div id='header'>
+                <h1><img src='imagens/logo.png' alt="Logo do livro de receitas"></h1>                            
+                <ul id='menu'>
+                    <li onmouseover='fotoMenu("imagens/menu-home.png")' onmouseout='fotoMenu("imagens/menu-contato.png")'><a href='index.html'>Home</a>
+                        <ul class='submenu'>
+                            <li id='sub'>Submenu 1</li>
+                            <li id='sub'>Submenu 2</li>
+                            <li id='sub'>Submenu 3</li>
+                        </ul>
+                    </li>
+                    <li onmouseover='fotoMenu("imagens/menu-receitas.png")' onmouseout='fotoMenu("imagens/menu-contato.png")'><a href='sua_receita.html'>Sua Receita</a></li>
+                    <li onmouseover='fotoMenu("imagens/menu-contato.png")' onmouseout='fotoMenu("imagens/menu-contato.png")'><a href='contato.html'>Contato</a>
+                        <ul class='submenu'>
+                            <li id='sub'>Quem Somos</li>
+                            <li id='sub'><a href='#formularios'>Formulários</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <figura>
+                <img id='figura' src = 'imagens/menu-contato.png'/>
+            </figura>
+        </header>
+
+        <main>
+
+<!--TEXTO QUEM SOMOS-->  
+            <div id='quem'>Somos um casal bem diferenciado: <i>Ela gosta de <c style="color: rgb(209, 209, 46);">MILHO</c>, Eu gosto de <c style="color: rgb(105, 62, 1);">CHOCOLATE</c></i>! Mas isso não quer dizer que não possamos comer juntos, pois quando estamos escolhemos bolo de milho com cobertura de chocolate. Ela fica com o bolo e eu com a cobertura...</div>
+
+<!--FORMULARIOS PARA CONTATO-->        
+
+            <section id='formularios'>
+                <form method="post" action="mailto:mateu__15@hotmail.com">
+                    <fieldset>
+                        <legend>Preencha os campos</legend>
+
+                        <label for='nomesobrenome'>Nome completo:</label>
+                        <input type='text' id='nomesobrenome' class='input-padrao' maxlength="45" required autofocus>
+                        
+                        <label for='email'>E-mail:</label>
+                        <input type='email' id='email' class='input-padrao' required placeholder="seu_email@dominio.com">
+
+                        <label for='telefone'>Telefone para contato:</label>
+                        <input type='tel' id='telefone' class='input-padrao' maxlength="11" required placeholder="(XX) XXXX-XXXX">
+
+                        <label for='nascimento'>Data de nascimento:</label>
+                        <input type='date' id='nascimento' class='input-padrao'>
+                        
+                        <label for='mensagem'>Mensagem:</label>
+                        <textarea cols='70' rows='10' id='mensagem' class='input-padrao' maxlength="350" required></textarea>
+                        <input type='reset' value='Limpar' class='limpar'> <br> <br>
+
+                        <label for='urg'>Grau de urgência:</label>
+                        Mín<input type='range' id='urg' min='0' max='10' step='2' >Máx
+
+                        <fieldset>
+                            <legend id="thead">Como gostaria que o contatássemos?</legend>
+                            <label for='radio-email'><input type='radio' name='contato' id= 'radio-email'></input>E-mail</label>
+                            <label for='radio-telefone'><input type='radio' name='contato' id= 'radio-telefone'></input>Telefone</label>
+                            <label for='radio-whatsapp'><input type='radio' name='contato' id= 'radio-whatsapp' checked></input>Whatsapp</label>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Melhor horário para ser atendido?</legend>
+                            <select>
+                                <optgroup label="Horário comercial">
+                                    <option value='M'>Manhã</option>
+                                    <option value='T' selected>Tarde</option>
+                                </optgroup>
+                                <optgroup label="Horário não-comercial">
+                                    <option value='N'>Noite</option>
+                                </optgroup>
+                            </select>
+                        </fieldset>
+                        
+                        <label class='checkbox'><input type='checkbox' checked>Gostaria de receber as melhores receitas por e-mail?</label>
+
+                        <input type='submit' value='Enviar' class='enviar'>
+                    
+                    </fieldset>
+                </form>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <td colspan="2" align="center">Fortaleza</td> 
+                        </tr>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>8h ~ 17h</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>8h ~ 17h</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>8h ~ 15h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p class='copyright'>&copy;2020 Livro de Receitas do Casal.</p>
+            <p>As melhores receitas!</p>
+        </footer>
+    </body>
+</html>
